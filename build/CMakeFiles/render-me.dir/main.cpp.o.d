@@ -168,4 +168,4 @@ CMakeFiles/render-me.dir/main.cpp.o: /home/arnav/render-me/main.cpp \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/iostream
+ /usr/include/c++/11/bits/vector.tcc
