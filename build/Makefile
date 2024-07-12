@@ -129,29 +129,29 @@ render-me/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/build
 .PHONY : render-me/fast
 
-tga_test.o: tga_test.cpp.o
-.PHONY : tga_test.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-tga_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/tga_test.cpp.o
-.PHONY : tga_test.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-tga_test.i: tga_test.cpp.i
-.PHONY : tga_test.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-tga_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/tga_test.cpp.i
-.PHONY : tga_test.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-tga_test.s: tga_test.cpp.s
-.PHONY : tga_test.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-tga_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/tga_test.cpp.s
-.PHONY : tga_test.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render-me.dir/build.make CMakeFiles/render-me.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 tgaimage.o: tgaimage.cpp.o
 .PHONY : tgaimage.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... render-me"
-	@echo "... tga_test.o"
-	@echo "... tga_test.i"
-	@echo "... tga_test.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... tgaimage.o"
 	@echo "... tgaimage.i"
 	@echo "... tgaimage.s"

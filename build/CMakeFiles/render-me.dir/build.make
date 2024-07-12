@@ -69,19 +69,19 @@ include CMakeFiles/render-me.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/render-me.dir/flags.make
 
-CMakeFiles/render-me.dir/tga_test.cpp.o: CMakeFiles/render-me.dir/flags.make
-CMakeFiles/render-me.dir/tga_test.cpp.o: ../tga_test.cpp
-CMakeFiles/render-me.dir/tga_test.cpp.o: CMakeFiles/render-me.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnav/render-me/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/render-me.dir/tga_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render-me.dir/tga_test.cpp.o -MF CMakeFiles/render-me.dir/tga_test.cpp.o.d -o CMakeFiles/render-me.dir/tga_test.cpp.o -c /home/arnav/render-me/tga_test.cpp
+CMakeFiles/render-me.dir/main.cpp.o: CMakeFiles/render-me.dir/flags.make
+CMakeFiles/render-me.dir/main.cpp.o: ../main.cpp
+CMakeFiles/render-me.dir/main.cpp.o: CMakeFiles/render-me.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnav/render-me/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/render-me.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render-me.dir/main.cpp.o -MF CMakeFiles/render-me.dir/main.cpp.o.d -o CMakeFiles/render-me.dir/main.cpp.o -c /home/arnav/render-me/main.cpp
 
-CMakeFiles/render-me.dir/tga_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/render-me.dir/tga_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnav/render-me/tga_test.cpp > CMakeFiles/render-me.dir/tga_test.cpp.i
+CMakeFiles/render-me.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/render-me.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnav/render-me/main.cpp > CMakeFiles/render-me.dir/main.cpp.i
 
-CMakeFiles/render-me.dir/tga_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/render-me.dir/tga_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnav/render-me/tga_test.cpp -o CMakeFiles/render-me.dir/tga_test.cpp.s
+CMakeFiles/render-me.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/render-me.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnav/render-me/main.cpp -o CMakeFiles/render-me.dir/main.cpp.s
 
 CMakeFiles/render-me.dir/tgaimage.cpp.o: CMakeFiles/render-me.dir/flags.make
 CMakeFiles/render-me.dir/tgaimage.cpp.o: ../tgaimage.cpp
@@ -99,13 +99,13 @@ CMakeFiles/render-me.dir/tgaimage.cpp.s: cmake_force
 
 # Object files for target render-me
 render__me_OBJECTS = \
-"CMakeFiles/render-me.dir/tga_test.cpp.o" \
+"CMakeFiles/render-me.dir/main.cpp.o" \
 "CMakeFiles/render-me.dir/tgaimage.cpp.o"
 
 # External object files for target render-me
 render__me_EXTERNAL_OBJECTS =
 
-render-me: CMakeFiles/render-me.dir/tga_test.cpp.o
+render-me: CMakeFiles/render-me.dir/main.cpp.o
 render-me: CMakeFiles/render-me.dir/tgaimage.cpp.o
 render-me: CMakeFiles/render-me.dir/build.make
 render-me: CMakeFiles/render-me.dir/link.txt

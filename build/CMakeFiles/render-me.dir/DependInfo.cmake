@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arnav/render-me/tga_test.cpp" "CMakeFiles/render-me.dir/tga_test.cpp.o" "gcc" "CMakeFiles/render-me.dir/tga_test.cpp.o.d"
+  "/home/arnav/render-me/main.cpp" "CMakeFiles/render-me.dir/main.cpp.o" "gcc" "CMakeFiles/render-me.dir/main.cpp.o.d"
   "/home/arnav/render-me/tgaimage.cpp" "CMakeFiles/render-me.dir/tgaimage.cpp.o" "gcc" "CMakeFiles/render-me.dir/tgaimage.cpp.o.d"
   )
 
