@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -O3 -DNDEBUG -rdynamic CMakeFiles/render-me.dir/tga_test.cpp.o CMakeFiles/render-me.dir/tgaimage.cpp.o -o render-me 
