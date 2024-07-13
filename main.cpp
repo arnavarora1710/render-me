@@ -6,13 +6,17 @@ const TGAColor green = TGAColor(0, 255, 0);
 const TGAColor blue = TGAColor(0, 0, 255);
 int W, H;
 
-void swap(int& x, int& y) {
+inline void swap(int& x, int& y) {
     x ^= y;
     // x = x ^ y
     y ^= x;
     // y = x ^ y ^ y = x
     x ^= y;
     // x = x ^ y ^ x = y
+}
+
+inline int sgn(int x) {
+    return (x > 0 ? 1 : -1);
 }
 
 void line(TGAImage& img, int x1, int y1, int x2, int y2, TGAColor col) {
@@ -36,15 +40,22 @@ void line(TGAImage& img, int x1, int y1, int x2, int y2, TGAColor col) {
         swap(x1, x2);
         swap(y1, y2);
     }
+    // Bresenham’s Line Drawing Algorithm
+    // think of moving y either up or down a pixel
+    // while moving in the direction of the slope
+    int dx = x2 - x1, dy = y2 - y1;
+    int derr = std::abs(dy) << 1;
+    int err = 0, y = y1;
     for (int x = x1; x <= std::min(W - 1, x2); ++x) {
-        float t = (x - x1) / (float) (x2 - x1);
-        // can think of t as % of x covered
-        int y = y1 * (1. - t) + y2 * t; 
         if (y >= H) continue;
-        // now have to cover similar % for y
         int X = (swapped ? y : x);
         int Y = (swapped ? x : y);
         img.set(X, Y, col);
+        err += derr;
+        if (err > dx) {
+            y += sgn(y2 > y1);
+            err -= dx << 1;
+        }
     }
 }
 
@@ -53,7 +64,7 @@ int main() {
     TGAImage image(W, H, TGAImage::RGB);
     line(image, 13, 20, 80, 40, red);
     line(image, 20, 13, 40, 80, green);
-    // line(image, 80, 40, 13, 20, blue);
+    line(image, 10, 65, 80, 65, blue);
     image.flip_vertically();
     image.write_tga_file("output.tga");
     return 0;
