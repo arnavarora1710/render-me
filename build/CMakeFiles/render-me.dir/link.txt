@@ -1,1 +1,1 @@
-/usr/bin/c++  -fopenmp -O3 -DNDEBUG -rdynamic CMakeFiles/render-me.dir/main.cpp.o CMakeFiles/render-me.dir/tgaimage.cpp.o -o render-me 
+/Library/Developer/CommandLineTools/usr/bin/c++ -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/render-me.dir/main.cpp.o" "CMakeFiles/render-me.dir/tgaimage.cpp.o" -o render-me 
