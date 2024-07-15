@@ -6,9 +6,9 @@
 template <typename T> class vec2 {
     // can access vec2 as a struct .x, .y or an array [0], [1]
     union {
-		struct {T x, y;};
-		T raw[2];
-	};
+        struct {T x, y;};
+        T raw[2];
+    };
 
     // constructors
     vec2 () : x(0), y(0) {}
