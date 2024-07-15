@@ -4,7 +4,7 @@ cmake ..
 ```
 To build, execute:
 ```bash
-cmake --build . -j &&
+cmake --build . -j 
 ```
 To run, execute:
 ```bash
